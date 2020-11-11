@@ -21,6 +21,7 @@ def update_status
    }
 
 epic tragedy[:montague][:hero][:status] = "dead"
+epic tragedy[:capulet]
 
 
 
