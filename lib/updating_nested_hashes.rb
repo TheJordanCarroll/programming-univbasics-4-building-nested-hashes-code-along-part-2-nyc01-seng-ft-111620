@@ -21,12 +21,10 @@ def update_status
    }
 
 epic tragedy[:montague][:hero][:status] = "dead"
+
 epic tragedy[:capulet][:heroine][:status] = "dead"
 
-
-
-
-  # After your code, the following code will return the altered hash. This method must only return the modified epic_tragedy hash
+puts epic_tragedy
   epic_tragedy
 end
 
