@@ -48,25 +48,7 @@ def add_characters
          ]
       }
    }
-
-epic_tragedy[:additional_characters] = []
-
-prince = { name: "Prince Escalus" }
-apothecary = {name: "Apothecary" }
-
-epic_tragedy[:additional_characters] << prince 
-epic_tragedy[:additional_characters] << apothecary
-
-epic_tragedy[:additional_characters] << { name: "Prince Escalus" }
-epic_tragedy[:additional_characters] << { name: "Apothecary" }
-
-epic_tragedy[:additional_characters][0] = { name: "Prince Escalus" }
-epic_tragedy[:additional_characters][1] = { name: "Apothecary" }
-
-epic_tragedy[:additional_characters] = [
-  { name: "Prince Escalus" },
-  { name: "Apothecary" }
-]
+   
    # Write code below that does the following programmatically:
    #
    # - Add an additional :additional_characters key to epic_tragedy and assign it an array as its value
@@ -74,12 +56,13 @@ epic_tragedy[:additional_characters] = [
    #   - The first hash should have the :name key set to "Prince Escalus" 
    #   - The second hash should have the :name key set to "Apothecary" 
    # Code your solution here:
-
-
-
-
-
+   
+epic_tragedy[:additional_characters] = [
+  { name: "Prince Escalus" },
+  { name: "Apothecary" }
+]
 
    # After your code, the following line will return the altered hash
-   epic_tragedy
+   
+puts epic_tragedy
 end
